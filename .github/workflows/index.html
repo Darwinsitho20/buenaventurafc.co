@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenaventura Fútbol Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.infisport.com/media/wysiwyg/La_Preparacion_fisica_en_el_futbol_2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            background: rgba(255, 215, 0, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .estadio {
+            background-color: #228B22;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .uniformes {
+            display: flex;
+            justify-content: space-between;
+        }
+        .uniforme {
+            background: white;
+            border: 2px solid #FFD700;
+            padding: 10px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .uniforme:hover {
+            transform: scale(1.05);
+        }
+        .calendario {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .calendario table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendario th, .calendario td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .calendario td:hover .info {
+            display: block;
+        }
+        .info {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 215, 0, 0.9);
+            color: #333;
+            padding: 5px;
+            z-index: 1;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .navegacion-calendario {
+            margin: 20px 0;
+        }
+        .navegacion-calendario button {
+            padding: 10px;
+            margin: 0 5px;
+            background: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .fin-de-semana {
+            background-color: #FFD700; /* Amarillo para fines de semana */
+        }
+        .local {
+            background-color: #228B22; /* Verde para partidos locales */
+            color: white;
+        }
+        .visita {
+            background-color: #00FF00; /* Verde claro para partidos de visita */
+            color: black;
+        }
+        .libertadores {
+            background-color: #FF4500; /* Rojo para partidos de la Libertadores */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Buenaventura Fútbol Club</h1>
+    <nav>
+        <a href="#equipo">Equipo</a>
+        <a href="#estadio">Estadio</a>
+        <a href="#uniformes">Uniformes</a>
+        <a href="#eventos">Eventos</a>
+    </nav>
+</header>
+
+<section id="equipo">
+    <h2>Equipo</h2>
+    <p>Bienvenido al Buenaventura Fútbol Club, donde la pasión por el fútbol se une con la cultura de Buenaventura. Nuestro equipo está compuesto por los mejores jugadores de la región, listos para competir en los más altos niveles del fútbol nacional e internacional.</p>
+</section>
+
+<section id="estadio" class="estadio">
+    <h2>Estadio</h2>
+    <p>Capacidad: 95,000 espectadores</p>
+    <p>El estadio cuenta con un techo cubierto y modernas instalaciones para garantizar una experiencia inolvidable para los aficionados. ¡Ven y apoya a tu equipo!</p>
+    <img src="file:///C:/Users/myuli/Downloads/DALL%C2%B7E%202024-09-30%2017.49.35%20-%20A%20modern%20football%20stadium%20design%20for%20Buenaventura%20Futbol%20Club,%20capable%20of%20holding%2095,000%20spectators.%20The%20stadium%20should%20have%20a%20covered%20roof,%20a%20vibrant.webp" alt="Estadio Buenaventura Fútbol Club" alt="Estadio Buenaventura Fútbol Club">
+</section>
+
+<section id="uniformes">
+    <h2>Uniformes</h2>
+    <div class="uniformes">
+        <div class="uniforme">
+            <h3>Equipo Local</h3>
+            <p>Camisa: Amarillo</p>
+            <p>Pantaloneta: Verde</p>
+            <p>Medias: Blancas</p>
+            <img src="file:///C:/Users/myuli/Downloads/file-lN6i8e8VxqPb2DytFNOu4ZiQ.webp" alt="Uniforme Local Buenaventura Fútbol Club">
+        </div>
+        <div class="uniforme">
+            <h3>Equipo Visitante</h3>
+            <p>Todo Blanco</p>
+            <p>Líneas Amarillas en Camisa y Pantaloneta</p>
+            <p>Línea Verde en medio de la línea amarilla</p>
+            <p>Medias: Verdes con línea gruesa</p>
+            <img src="file:///C:/Users/myuli/Downloads/file-dm1dlAfi1qf93IUSaKGlw55U.webp" alt="Uniforme Visitante Buenaventura Fútbol Club">
+        </div>
+        <div class="uniforme">
+            <h3>Tercer Uniforme</h3>
+            <p>Color: Negro</p>
+            <p>Líneas: Azules</p>
+            <img src="file:///C:/Users/myuli/Downloads/file-uRU5PVuSoebtFlC9m519FaTJ.webp" alt="Tercer Uniforme Buenaventura Fútbol Club">
+        </div>
+    </div>
+</section>
+
+<section id="eventos" class="calendario">
+    <h2>Eventos</h2>
+    <h3>Calendario de Partidos</h3>
+    
+    <div class="navegacion-calendario">
+        <button id="prev">Anterior</button>
+        <span id="mes-anio"></span>
+        <button id="next">Siguiente</button>
+    </div>
+
+    <table id="calendario">
+        <tr>
+            <th>Dom</th>
+            <th>Lun</th>
+            <th>Mar</th>
+            <th>Mié</th>
+            <th>Jue</th>
+            <th>Vie</th>
+            <th>Sáb</th>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>&copy; 2025 Buenaventura Fútbol Club. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    const eventos = {
+        "2025-01": {
+            "11": {tipo: 'local', info: "Buenaventura FC vs. Club A - Hora: 20:00 - Estadio: Buenaventura"},
+            "21": {tipo: 'visita', info: "Club B vs. Buenaventura FC - Hora: 18:00 - Estadio: Club B"}
+        },
+        "2025-02": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        "2025-03": {
+            "4": {tipo: 'local', info: "Buenaventura FC vs. Club G - Hora: 20:00 - Estadio: Buenaventura"},
+            "8": {tipo: 'libertadores', info: "Buenaventura FC vs. Club H - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club I vs. Buenaventura FC - Hora: 18:00 - Estadio: Club I"},
+            "18": {tipo: 'local', info: "Buenaventura FC vs. Club J - Hora: 20:00 - Estadio: Buenaventura"},
+        },
+        "2025-04": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        "2025-05": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        "2025-06": {
+            "11": {tipo: 'local', info: "Buenaventura FC vs. Club A - Hora: 20:00 - Estadio: Buenaventura"},
+            "21": {tipo: 'visita', info: "Club B vs. Buenaventura FC - Hora: 18:00 - Estadio: Club B"}
+        },
+        "2025-08": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        "2025-09": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        "2025-10": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        "2025-11": {
+            "4": {tipo: 'libertadores', info: "Buenaventura FC vs. Club X - Hora: 20:00 - Estadio: Buenaventura"},
+            "7": {tipo: 'local', info: "Buenaventura FC vs. Club C - Hora: 20:00 - Estadio: Buenaventura"},
+            "11": {tipo: 'visita', info: "Club D vs. Buenaventura FC - Hora: 18:00 - Estadio: Club D"},
+            "25": {tipo: 'libertadores', info: "Club Y vs. Buenaventura FC - Hora: 20:00 - Estadio: Club Y"},
+        },
+        // Continúa con más eventos para otros meses...
+    };
+
+    let fechaActual = new Date();
+
+    function cargarCalendario() {
+        const mesAnio = document.getElementById('mes-anio');
+        const calendario = document.getElementById('calendario');
+
+        mesAnio.textContent = fechaActual.toLocaleString('default', { month: 'long', year: 'numeric' });
+        
+        const primerDia = new Date(fechaActual.getFullYear(), fechaActual.getMonth(), 1);
+        const ultimoDia = new Date(fechaActual.getFullYear(), fechaActual.getMonth() + 1, 0);
+        const diasEnMes = ultimoDia.getDate();
+        
+        calendario.innerHTML = "<tr><th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th></tr>";
+        
+        let fila = "<tr>";
+        
+        for (let i = 0; i < primerDia.getDay(); i++) {
+            fila += "<td></td>"; // Celdas vacías antes del primer día del mes
+        }
+        
+        for (let dia = 1; dia <= diasEnMes; dia++) {
+            const fechaKey = `${fechaActual.getFullYear()}-${(fechaActual.getMonth() + 1).toString().padStart(2, '0')}`;
+            const evento = eventos[fechaKey] && eventos[fechaKey][dia];
+
+            if (evento) {
+                fila += `<td class="${evento.tipo}">${dia}<div class="info">${evento.info}</div></td>`;
+            } else {
+                fila += `<td>${dia}</td>`;
+            }
+            
+            if ((dia + primerDia.getDay()) % 7 === 0) {
+                fila += "</tr>";
+                calendario.innerHTML += fila;
+                fila = "<tr>";
+            }
+        }
+        
+        while (fila.length < 8) {
+            fila += "<td></td>"; // Celdas vacías después del último día del mes
+        }
+        fila += "</tr>";
+        calendario.innerHTML += fila;
+    }
+
+    document.getElementById('prev').onclick = function() {
+        fechaActual.setMonth(fechaActual.getMonth() - 1);
+        cargarCalendario();
+    };
+
+    document.getElementById('next').onclick = function() {
+        fechaActual.setMonth(fechaActual.getMonth() + 1);
+        cargarCalendario();
+    };
+
+    cargarCalendario();
+</script>
+
+</body>
+</html>
